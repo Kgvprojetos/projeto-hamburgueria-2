@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/responsivo.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <title>Hanburgueria</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="./src/imagem/logo.jpg" alt="Logo DevBurguer" class="logo">
+            <h1 class="title">Hanburgueria</h1>
+            <span class="address">Rua dos lanches 220, Curitiba - PR</span>
+            <div class="schedule">
+                <span id="date-span">Seg a Dom - 18:00 às 22:00</span>
+            </div>
+        </div>
+    </header>
+    
+    
+    <h2 class="menu-title">Conheça nosso menu</h2>
+    
+    <!-- INÍCIO MENU -->
+    <div id="menu">
+        <main class="menu-container">
+            
+            <!-- PRODUTO ITEM -->
+            <div class="menu-item">
+                <img src="./src/imagem/burg-3.png" alt="Hamburguer Smash" class="menu-img">
+    
+                <div class="menu-info">
+                    <p class="menu-name">Hamburguer da casa</p>
+                    <p class="menu-description">
+                        Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato, maionese da casa.
+                    </p>
+    
+                    <div class="menu-footer">
+                        <p class="menu-price">R$ 18,90</p>
+                        <button class="add-to-cart-btn" data-name="Hamburguer da casa" data-price="18.90">
+                            <i><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                                fill="#5f6368">
+                                <path
+                                    d="m480-576-51-51 57-57H336v-72h150l-57-57 51-51 144 144-144 144ZM263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM48-792v-72h133l155 360h301l113-264h78L703-476q-9 20-26.5 32T637-432H317l-42 72h493v72H276q-42 0-63-36.5t0-71.5l52-90-131-306H48Z" />
+                            </svg></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="menu-item">
+                <img src="./src/imagem/burg-5.png" alt="Hamburguer X-Cheddar" class="menu-img">
+    
+                <div class="menu-info">
+                    <p class="menu-name">Hamburguer X-Cheddar</p>
+                    <p class="menu-description">
+                        Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato, maionese da casa.
+                    </p>
+    
+                    <div class="menu-footer">
+                        <p class="menu-price">R$ 38,90</p>
+                        <button class="add-to-cart-btn" data-name="Hamburguer X-Cheddar" data-price="38.90">
+                            <i><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                                fill="#5f6368">
+                                <path
+                                    d="m480-576-51-51 57-57H336v-72h150l-57-57 51-51 144 144-144 144ZM263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM48-792v-72h133l155 360h301l113-264h78L703-476q-9 20-26.5 32T637-432H317l-42 72h493v72H276q-42 0-63-36.5t0-71.5l52-90-131-306H48Z" />
+                            </svg></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="menu-item">
+                <img src="./src/imagem/burg-1.png" alt="Hamburguer Classico" class="menu-img">
+    
+                <div class="menu-info">
+                    <p class="menu-name">Hamburguer Classico</p>
+                    <p class="menu-description">
+                        Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato, maionese da casa.
+                    </p>
+    
+                    <div class="menu-footer">
+                        <p class="menu-price">R$ 28,90</p>
+                        <button class="add-to-cart-btn" data-name="Hamburguer Classico" data-price="28.90">
+                            <i><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                                fill="#5f6368">
+                                <path
+                                    d="m480-576-51-51 57-57H336v-72h150l-57-57 51-51 144 144-144 144ZM263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM48-792v-72h133l155 360h301l113-264h78L703-476q-9 20-26.5 32T637-432H317l-42 72h493v72H276q-42 0-63-36.5t0-71.5l52-90-131-306H48Z" />
+                            </svg></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="menu-item">
+                <img src="./src/imagem/burg-6.png" alt="X-Bacon" class="menu-img">
+    
+                <div class="menu-info">
+                    <p class="menu-name">X-Bacon</p>
+                    <p class="menu-description">
+                        Pão levinho de fermentação natural da Trigou, burger 160g, queijo prato, maionese da casa.
+                    </p>
+    
+                    <div class="menu-footer">
+                        <p class="menu-price">R$ 14,90</p>
+                        <button class="add-to-cart-btn" data-name="X-Bacon" data-price="14.90">
+                            <i><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                                fill="#5f6368">
+                                <path
+                                    d="m480-576-51-51 57-57H336v-72h150l-57-57 51-51 144 144-144 144ZM263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM48-792v-72h133l155 360h301l113-264h78L703-476q-9 20-26.5 32T637-432H317l-42 72h493v72H276q-42 0-63-36.5t0-71.5l52-90-131-306H48Z" />
+                            </svg></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+           
+    
+            <div class="modal hidden" id="cart-modal">
+                <div class="modal-content">
+                    <h2 class="modal-title">Meu carrinho</h2>
+            
+                    <div id="cart-items" class="cart-items"></div>
+            
+                    <p class="cart-total">Total: <span id="cart-total">0.00</span></p>
+            
+                    <p class="address-label">Endereço de entrega:</p>
+                    <input type="text" id="address" class="address-input" placeholder="Digite seu endereço completo...">
+                    <p class="address-warn hidden" id="address-warn">Digite seu endereço completo!</p>
+            
+                    <div class="modal-buttons">
+                        <button id="close-modal-btn" class="close-btn">Fechar</button>
+                        <button id="checkout-btn" class="checkout-btn">Finalizar pedido</button>
+                    </div>
+                </div>
+            </div>
+    
+        </main>
+    </div>
+    
+    <footer class="footer">
+        <button id="cart-btn" class="cart-button">
+            (<span id="cart-count">0</span>) Veja meu carrinho
+            <i><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px"
+                fill="#5f6368">
+                <path
+                    d="m480-576-51-51 57-57H336v-72h150l-57-57 51-51 144 144-144 144ZM263.79-96Q234-96 213-117.21t-21-51Q192-198 213.21-219t51-21Q294-240 315-218.79t21 51Q336-138 314.79-117t-51 21Zm432 0Q666-96 645-117.21t-21-51Q624-198 645.21-219t51-21Q726-240 747-218.79t21 51Q768-138 746.79-117t-51 21ZM48-792v-72h133l155 360h301l113-264h78L703-476q-9 20-26.5 32T637-432H317l-42 72h493v72H276q-42 0-63-36.5t0-71.5l52-90-131-306H48Z" />
+            </svg></i>
+        </button>
+    </footer>
+    
+    
+    <script src="./src/js/index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    
+    </body>
+    </html>
+    
+    
+    
+    
+    
+    
+</body>
+</html>

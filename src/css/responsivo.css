@@ -1,0 +1,6 @@
+@media (min-width: 788px) {
+    .menu-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+}

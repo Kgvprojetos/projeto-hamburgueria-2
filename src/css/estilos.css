@@ -1,0 +1,356 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin-bottom: 54px;
+    color: white;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 420px;
+    background: url('../imagem/fundo-2.png') center/cover no-repeat, #18181b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Container do conteúdo */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+/* Título */
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+/* Endereço */
+.address {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+/* Caixa do horário de funcionamento */
+.schedule {
+    padding: 8px 16px;
+    border-radius: 8px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+/* Título do menu */
+.menu-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 36px;
+    margin-bottom: 24px;
+    color: #111;
+}
+
+/* Container do menu */
+.menu-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+}
+
+/* Estilo do item do menu */
+.menu-item {
+    display: flex;
+    gap: 16px;
+    background-color: #232323;
+    padding: 15px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+/* Imagem do produto */
+.menu-img {
+    width: 112px;
+    height: 112px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-img:hover {
+    transform: scale(1.1) rotate(-2deg);
+}
+
+/* Informações do produto */
+.menu-info {
+    text-align: left;
+    flex: 1;
+}
+
+/* Nome do produto */
+.menu-name {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Descrição */
+.menu-description {
+    font-size: 0.9rem;
+    margin-top: 5px;
+    color: #e2e1e1;
+}
+
+/* Rodapé do item do menu */
+.menu-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+/* Preço */
+.menu-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Botão de adicionar ao carrinho */
+.add-to-cart-btn {
+    background: #fafafa;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+}
+
+.cart-btn:hover {
+    background-color: #000000;
+}
+
+/* Modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Esconder modal por padrão */
+.hidden {
+    display: none;
+}
+
+/* Conteúdo do modal */
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* Título */
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #111;
+}
+
+/* Itens do carrinho */
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    color: #111;
+}
+
+
+/* Total */
+.cart-total {
+    font-weight: bold;
+    color: #111;
+}
+
+/* Endereço */
+.address-label {
+    font-weight: bold;
+    margin-top: 16px;
+    color: #111;
+}
+
+.address-input {
+    width: 100%;
+    border: 2px solid #ccc;
+    padding: 8px;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+.address-warn{
+    color: #dc2626;
+
+}
+
+
+/* Botões */
+.modal-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.close-btn {
+    background: #ccc;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+}
+
+.checkout-btn {
+    background: #16a34a;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Hover dos botões */
+.close-btn:hover {
+    background: #aaa;
+}
+
+.checkout-btn:hover {
+    background: #128037;
+}
+
+/* Rodapé fixo */
+.footer {
+    width: 100%;
+    background-color: #dc2626;
+    /* Vermelho semelhante ao Tailwind bg-red-500 */
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    z-index: 40;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Botão do carrinho */
+.cart-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Container principal */
+.menu-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Título */
+.menu-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+/* Grid de itens */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Itens do menu */
+.menu-item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+/* Imagem do produto */
+.menu-img {
+    width: 112px;
+    height: 112px;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-img:hover {
+    transform: scale(1.1) rotate(-2deg);
+}
+
+/* Informações do produto */
+.menu-info {
+    flex: 1;
+}
+
+.menu-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Rodapé do item */
+.menu-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* Preço */
+.menu-price {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
